@@ -1,0 +1,21 @@
+.select {
+    background-color: #c7d0d5;
+    color: black;
+    padding: 10px;
+    border: 1px solid #c7d0d5;
+    cursor: pointer;
+    position: relative;
+}
+
+.select::after {
+    content: "\f107 \f106";
+    /* Unicode de las flechas dobles */
+    font-family: FontAwesome;
+    font-size: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.select:hover .select-content {
+    display: block;
+}

@@ -1,0 +1,23 @@
+el body debe estar centrado en cualqueir pagina
+body {
+    background-color: #bbb5b5;
+    text-align: center;
+}
+
+h2 {
+    color: #585151;
+    font-family: "Verdana", sans-serif;
+    font-size: 150%;
+    text-align: center;
+}
+
+h3 {
+    color: #585151;
+    font-family: "Verdana", sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+.card-container {
+    text-align: center;
+}
