@@ -1,0 +1,8 @@
+<div class="dropdown">
+  <div class="selected-option" (click)="toggleDropdown()">
+    {{ selectedOption2 || 'Selecciona un usuario' }}
+  </div>
+  <ul class="options-list" *ngIf="selectorOpen">
+    <li *ngFor="let option of options" (click)="onSelect(option)">{{ option }}</li>
+  </ul>
+</div>

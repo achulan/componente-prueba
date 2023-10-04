@@ -26,5 +26,12 @@ export class AppComponent {
     { dispo: true , label: 'Claudie Smitham', value: 'usuario7' },
     { dispo: true , label: 'Emil Schaefer', value: 'usuario8' },
   ];
+
+  dropdownOptions: string[] = ['Wade Cooper', 'Arlene Mccoy', 'Opción 3'];
+  selectedOption2: string | null = null;
+
+  onOptionSelected(option: string) {
+    this.selectedOption2 = option;
+  }
   
 }

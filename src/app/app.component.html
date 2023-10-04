@@ -1,15 +1,18 @@
-
 <body>
 
-    <!-- Select Component -->
-    <h2>SELECT COMPONENT</h2>
+  <!-- Select Component -->
+  <h2>SELECT COMPONENT</h2>
 
-    <h3>Usuario Seleccionado</h3>
-    <div class="card-container">
-      <app-select [options]="users" (selectionChange)="onUserSelected($event)"></app-select>
-    </div>
-  
-    <!-- Aquí aparece el usuario elegido anteriormente-->
-    <h3>El Usuario elegido es: {{ selectedOption }}</h3>
+  <h3>Usuarios</h3>
+  <div class="card-container">
+    <app-select [options]="users" (selectionChange)="onUserSelected($event)"></app-select>
+  </div>
+
+  <div class="card-container">
+    <app-dropdown [options]="dropdownOptions" (optionSelected)="onOptionSelected($event)"></app-dropdown>
+  </div>
+
+  <!-- Aquí aparece el usuario elegido anteriormente-->
+  <h3>El Usuario elegido es: {{ selectedOption2 }}</h3>
 
 </body>
