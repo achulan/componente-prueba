@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, Render
 @Component({
   selector: 'app-dropdown',
   templateUrl: './dropdown.component.html',
-  styleUrls: ['./dropdown.component.css'],
+  styleUrls: ['./dropdown.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DropdownComponent {

@@ -1,0 +1,21 @@
+$color_1: #b0a8a8;
+$font-family_1: "Verdana", sans-serif;
+
+body {
+	text-align: center;
+}
+h2 {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 150%;
+	text-align: center;
+}
+h3 {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 100%;
+	text-align: center;
+}
+.card-container {
+	text-align: -webkit-center;
+}
