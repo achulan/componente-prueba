@@ -3,8 +3,9 @@
     {{ selectedOption2 || 'Selecciona un usuario' }}
     <i class="fa-solid fa-chevron-down"></i>
   </div>
-  <div class="options-list">
+  <div class="options-list custom-list">
     <ul *ngIf="selectorOpen">
+      <!-- <button *ngFor="let option of options"  (click)="onSelect(option)">{{ option }}</button> -->
       <li *ngFor="let option of options" (click)="onSelect(option)">{{ option }}</li>
     </ul>
   </div>

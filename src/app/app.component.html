@@ -4,9 +4,6 @@
   <h2>SELECT COMPONENT</h2>
 
   <h3>Usuarios</h3>
-  <div class="card-container">
-    <app-select [options]="users" (selectionChange)="onUserSelected($event)"></app-select>
-  </div>
 
   <div class="card-container">
     <app-dropdown [options]="dropdownOptions" (optionSelected)="onOptionSelected($event)"></app-dropdown>

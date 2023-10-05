@@ -2,6 +2,10 @@ li {
     list-style: none;
 }
 
+ul {
+    padding: 0;
+}	
+
 .dropdown {
     margin: 1rem;
     width: 20rem;    
@@ -17,6 +21,7 @@ li {
     border-block-color: black;
     border: 1px solid;
     border-radius: 0.3rem;
+    justify-content: space-between;
 }
 
 .options-list {
@@ -24,3 +29,19 @@ li {
     border-radius: 0.3rem;
     border: 1px solid black;
 }
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .custom-list li {
+    padding: 5px;
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre los elementos de lista */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el color de fondo y texto */
+  }
+  
+  .custom-list li:hover {
+    background-color: #3498db; /* Cambia el color de fondo al pasar sobre el elemento de la lista */
+    color: #ffffff; /* Cambia el color del texto al pasar sobre el elemento de la lista */
+  }

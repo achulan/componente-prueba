@@ -19,5 +19,5 @@ h3 {
 }
 
 .card-container {
-    text-align: center;
+    text-align: -webkit-center;
 }
