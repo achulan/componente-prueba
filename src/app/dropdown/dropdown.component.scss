@@ -39,6 +39,8 @@ ul {
 .custom-list {
 	list-style: none;
 	padding: 0;
+	max-height: 10rem;
+    overflow-y: auto;
 	li {
 		padding: 5px;
 		cursor: pointer;
