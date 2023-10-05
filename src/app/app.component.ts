@@ -11,9 +11,9 @@ export class AppComponent {
   title = 'componente-prueba';
   selectedOption: string = '';
 
-  onUserSelected(selectedUserId: string) {
-    console.log('Usuario seleccionado:', selectedUserId);
-    this.selectedOption = selectedUserId;
+  onUserSelected(selectedUserName: string) {
+    console.log('Usuario seleccionado:', selectedUserName);
+    this.selectedOption = selectedUserName;
   }
 
   users: UsersOption[] = [
@@ -27,7 +27,7 @@ export class AppComponent {
     { dispo: true , label: 'Emil Schaefer', value: 'usuario8' },
   ];
 
-  dropdownOptions: string[] = ['Wade Cooper', 'Arlene Mccoy', 'Opción 3'];
+  dropdownOptions: string[] = ['Wade Cooper', 'Arlene Mccoy', 'Devon Webb'];
   selectedOption2: string | null = null;
 
   onOptionSelected(option: string) {
