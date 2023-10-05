@@ -1,5 +1,6 @@
 li {
     list-style: none;
+    text-align: left;
 }
 
 ul {
@@ -24,10 +25,16 @@ ul {
     justify-content: space-between;
 }
 
+.selected-text {
+    font-weight: bold;
+  }
+
 .options-list {
+    position: relative;
     margin-top: 0.5rem;
     border-radius: 0.3rem;
     border: 1px solid black;
+    z-index: 99 !important;
 }
 
 .custom-list {
@@ -37,11 +44,36 @@ ul {
   
   .custom-list li {
     padding: 5px;
-    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre los elementos de lista */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave para el color de fondo y texto */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .custom-list li:hover {
-    background-color: #3498db; /* Cambia el color de fondo al pasar sobre el elemento de la lista */
-    color: #ffffff; /* Cambia el color del texto al pasar sobre el elemento de la lista */
+    background-color: #3498db;
+    color: #ffffff;
   }
+
+.fa-circle {
+    color: green;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.fa-circle.red {
+    color: red;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.fa-check {
+    margin-right: 0.5rem;
+    float: right;
+}
+
+.clickfuera {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+}

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, Renderer2, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown',
@@ -8,6 +8,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 })
 export class DropdownComponent {
   @Input() options: string[] = [];
+  @Input() Jose: {dispo:boolean, label:string, value:string}[] = [];
   @Output() optionSelected = new EventEmitter<string>();
   selectedOption2: string | null = null;
   selectorOpen = false;
@@ -21,4 +22,5 @@ export class DropdownComponent {
   toggleDropdown() {
     this.selectorOpen = !this.selectorOpen;
   }
+
 }

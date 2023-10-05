@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { UsersOption } from './users-option';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +8,9 @@ import { UsersOption } from './users-option';
 })
 export class AppComponent {
   title = 'componente-prueba';
-  selectedOption: string = '';
+  selectedOption: string | null = null;
 
-  onUserSelected(selectedUserName: string) {
-    console.log('Usuario seleccionado:', selectedUserName);
-    this.selectedOption = selectedUserName;
-  }
-
-  users: UsersOption[] = [
+  usersOption = [
     { dispo: true , label: 'Wade Cooper', value: 'usuario1' },
     { dispo: true , label: 'Arlene Mccoy', value: 'usuario2' },
     { dispo: false , label: 'Devon Webb', value: 'usuario3' },
@@ -27,11 +21,8 @@ export class AppComponent {
     { dispo: true , label: 'Emil Schaefer', value: 'usuario8' },
   ];
 
-  dropdownOptions: string[] = ['Wade Cooper', 'Arlene Mccoy', 'Devon Webb'];
-  selectedOption2: string | null = null;
-
-  onOptionSelected(option: string) {
-    this.selectedOption2 = option;
+  onUserSelected(option: string) {
+    this.selectedOption = option;
   }
   
 }

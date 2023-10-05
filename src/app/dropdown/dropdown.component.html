@@ -1,15 +1,21 @@
+
 <div class="dropdown">
   <div class="selected-option" (click)="toggleDropdown()">
     {{ selectedOption2 || 'Selecciona un usuario' }}
     <i class="fa-solid fa-chevron-down"></i>
   </div>
-  <div class="options-list custom-list">
-    <ul *ngIf="selectorOpen">
-      <li *ngFor="let option of options" (click)="onSelect(option)">{{ option }}</li>
+  <div class="options-list custom-list" *ngIf="selectorOpen">
+    <ul>
+      <li *ngFor="let option of Jose" (click)="onSelect(option.label)">
+        <i class="fa-solid fa-circle" [ngClass]="{'red': !option.dispo}"></i>
+        <!-- si la opción está seleccionada está en negrita -->
+        <span [ngClass]="{'selected-text': selectedOption2 === option.label}">
+          {{ option.label }}
+        </span>
+        <!-- check if selected the option -->
+        <i class="fa-solid fa-check" *ngIf="selectedOption2 === option.label"></i>
+      </li>
     </ul>
   </div>
 </div>
-
-<!-- <div class="w-4 h-4 rounded-full mr-2" [ngClass]="{
-                'bg-red-500': option.dispo,
-                'bg-green-500': !option.dispo }"></div> -->
+<div class="clickfuera" *ngIf="selectorOpen === true" (click)="toggleDropdown()"></div>
