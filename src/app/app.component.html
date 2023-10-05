@@ -6,7 +6,11 @@
   <h3>Usuarios</h3>
 
   <div class="card-container">
-    <app-dropdown [Jose]="usersOption" (optionSelected)="onUserSelected($event)"></app-dropdown>
+    <app-dropdown [users]="usersOption" (optionSelected)="onUserSelected($event)">
+      <div class="selector">
+        {{ selectedOption || 'Selecciona un usuario' }}
+      </div>
+    </app-dropdown>
   </div>
 
   <!-- Aquí aparece el usuario elegido anteriormente-->
