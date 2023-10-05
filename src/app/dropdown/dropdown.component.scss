@@ -1,6 +1,6 @@
 $color_1: #ffffff;
-$color_2: green;
-$color_3: red;
+$color_2: rgb(65, 144, 65);
+$color_3: rgb(96, 81, 81);
 $background-color_1: #3498db;
 
 li {
@@ -27,6 +27,7 @@ ul {
 }
 .selected-text {
 	font-weight: bold;
+	width: 100%;
 }
 .options-list {
 	position: relative;
@@ -42,6 +43,8 @@ ul {
 		padding: 5px;
 		cursor: pointer;
 		transition: background-color 0.3s, color 0.3s;
+		display: flex;
+    	align-items: center;
 		&:hover {
 			background-color: $background-color_1;
 			color: $color_1;

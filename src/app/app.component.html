@@ -7,7 +7,7 @@
 
   <div class="card-container">
     <app-dropdown [users]="usersOption" (optionSelected)="onUserSelected($event)">
-      <div class="selector">
+      <div class="selector" required>
         {{ selectedOption || 'Selecciona un usuario' }}
       </div>
     </app-dropdown>
